@@ -1,5 +1,7 @@
 # MyStore
 
+<img src='https://user-images.githubusercontent.com/75043063/206785033-81a35a39-1887-4ca2-b981-5302571a77da.png' />
+
 MyStore is a single-page application built in Angular, that offers a rich, dynamic experience on the web. It presents a list of product which can be added to a cart then chechout. Bellow are all the functionality one can perform:
 
 - View list of products
