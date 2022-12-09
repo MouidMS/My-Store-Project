@@ -1,0 +1,13 @@
+nav {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+fa-icon{
+  width: 40px;
+}

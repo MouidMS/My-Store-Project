@@ -1,0 +1,16 @@
+<div class="container">
+  <a routerLink='{{ pro.id }}/product'>
+    <img src='{{ pro.url }}'>
+  </a>
+  <div style="font-weight: bold;">{{ pro.name }}</div>
+  <div><b>Price:</b> {{ pro.price}} $</div>
+
+  <form fxLayout="column" fxFlex="flex-basic" (ngSubmit)="onSubmit()" fxLayoutGap="20px">
+    <select [(ngModel)]="order" name="amount">
+      <option *ngFor="let i of number" value="{{ i }}">
+        {{ i }}
+      </option>
+    </select>
+    <input type="submit" value="Add" class="btn btn-dark">
+  </form>
+</div>

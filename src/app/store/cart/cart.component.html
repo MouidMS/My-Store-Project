@@ -1,0 +1,22 @@
+<div *ngIf="carts.length; else empty" class="container">
+
+  <div class="cart-item">
+    <app-cart-itme *ngFor="let item of carts" [item]="carts" [product]="item" (change)="total()">
+    </app-cart-itme>
+    <div class="item">
+      <p class="price">Total Price: ${{ totalPrice }}</p>
+    </div>
+    <input type="submit" (click)="onClearCart()" value="Clear" class="btn-add" class="mt-2 btn btn-danger" />
+
+  </div>
+  <div class="form-user">
+    <app-form-user (name)="onSubmit($event)"></app-form-user>
+  </div>
+</div>
+
+
+<ng-template #empty>
+  <div class="empty-cart">
+    <h3 style="color: red; font-weight: bold;">Cart is Empty!</h3>
+  </div>
+</ng-template>

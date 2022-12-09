@@ -1,0 +1,25 @@
+img {
+  width: 150px;
+}
+p {
+  color: #0d6efd;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 70px;
+}
+
+.product-cart {
+  margin-left: 50px;
+  margin-right: 80px;
+}

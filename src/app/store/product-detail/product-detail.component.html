@@ -1,0 +1,19 @@
+<div class="container">
+    <img src="{{ product.url }}" />
+    <div class="details">
+        <h2 class="name" style="font-weight: bold;">{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p class="price" style="font-weight: bold;">{{ product.price}} $ </p>
+        <form fxLayout="column" (ngSubmit)="onSubmit()">
+            <select [(ngModel)]="order" name="amount">
+                <option *ngFor="let i of count" value="{{ i }}">
+                    {{ i }}
+                </option>
+            </select>
+            <input class="btn-add" type="submit" value="Add" class="mt-2 btn btn-dark" />
+        </form>
+        <div style="padding-top:20px ;">
+            <a routerLink="/"> Back to product list</a>
+        </div>
+    </div>
+</div>

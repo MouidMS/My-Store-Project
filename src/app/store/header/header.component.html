@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <fa-icon [icon]="shop"></fa-icon>
+    <i class="fa-solid fa-question-circle"></i>
+    <i class="fa-sharp fa-solid fa-bags-shopping"></i>
+    <a class="navbar-brand" href="#">My Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" fxLayout="column"
+      fxLayoutAlign="space-between center">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" ngbNav #nav="ngbNav" [(activeId)]="active">
+        <li class="nav-item" [ngbNavItem]="1">
+          <a class="nav-link active" aria-current="page" routerLink="/" ngbNavLink>Products</a>
+
+        </li>
+
+        <li class="nav-item" [ngbNavItem]="2">
+          <a class="nav-link active" aria-current="page" routerLink="cart/" ngbNavLink>Cart</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
